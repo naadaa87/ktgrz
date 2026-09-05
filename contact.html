@@ -3,65 +3,83 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact | KTGRZ 문의 · 오시는 길</title>
-<meta name="description" content="KTGRZ HOLDINGS 파트너십, 스폰서십, 선수 IP 활용, 해외 유통, 콘텐츠 제작 문의. 서울특별시 강남구 역삼로25길 32.">
-<meta property="og:title" content="Contact | KTGRZ 문의 · 오시는 길">
-<meta property="og:description" content="KTGRZ HOLDINGS 파트너십, 스폰서십, 선수 IP 활용, 해외 유통, 콘텐츠 제작 문의. 서울특별시 강남구 역삼로25길 32.">
+<title>Contact | KTGRZ 문의</title>
+<meta name="description" content="KTGRZ HOLDINGS 파트너십, 스폰서십, 선수 IP 활용, 해외 유통, 콘텐츠 제작 문의.">
+<meta property="og:title" content="Contact | KTGRZ 문의">
+<meta property="og:description" content="KTGRZ HOLDINGS 파트너십, 스폰서십, 선수 IP 활용, 해외 유통, 콘텐츠 제작 문의.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/img/hero_taekwondo.webp">
+<meta property="og:image" content="assets/img/crew_color.webp">
+<meta name="theme-color" content="#ffffff">
 <link rel="icon" type="image/png" href="assets/logo/symbol_black.png">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="mark" viewBox="0 0 488 277"><path d="M6,270 C5,270 4,269 4,269 C4,262 12,212 14,211 C16,209 453,208 455,210 C459,215 449,239 437,251 C427,261 412,269 396,271 C384,273 7,272 6,270 Z M20,166 C19,166 18,164 19,162 C19,161 21,148 23,134 C25,116 27,108 28,107 C30,104 224,104 226,107 C228,110 221,163 218,166 C216,169 22,169 20,166 Z M263,167 C261,165 262,163 266,135 C268,117 270,108 271,107 C273,104 467,104 469,107 C471,108 471,111 467,122 C459,145 437,163 411,167 C401,169 265,168 263,167 Z M37,62 C35,60 34,62 39,31 C43,6 43,5 45,2 L48,0 L265,-0 C506,-0 489,-0 488,6 C487,8 485,21 483,35 C481,50 479,61 478,62 C476,65 39,65 37,62 Z"/></symbol></svg>
 <a class="skip" href="#main">본문으로 건너뛰기</a>
 <!-- ===== HEADER (모든 페이지 동일) ===== -->
-<header class="site-header">
-  <div class="bar">
-    <a class="brand" href="index.html" aria-label="KTGRZ 홈"><img src="assets/logo/symbol_black.png" alt="KTGRZ 심볼"></a>
-    <a class="brand-word" href="index.html"><img src="assets/logo/ktgrz_black.png" alt="KTGRZ"><span class="hold">HOLDINGS</span></a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
-    <nav class="nav" id="nav">
-      <ul>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="sports.html">KTGRZ SPORTS</a></li>
-        <li><a href="creative.html">KTGRZ CREATIVE</a></li>
-        <li><a href="ezpz.html">EZPZ</a></li>
-        <li><a class="kr" href="sewooda.html">세우다컴퍼니</a></li>
-        <li><a href="takent.html">TAK ENT</a></li>
-        <li><a href="news.html">NEWS</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-      </ul>
-    </nav>
+<header class="hdr">
+  <div class="wrap row">
+    <a class="logo" href="index.html" aria-label="KTGRZ 홈"><img src="assets/logo/ktgrz_black.png" alt="KTGRZ"><span class="h">HOLDINGS</span></a>
+    <ul class="menu">
+      <li><a href="about.html">About</a></li>
+      <li><button type="button" aria-haspopup="true">Business ▾</button>
+        <ul class="sub">
+          <li><a href="sports.html">KTGRZ SPORTS</a></li>
+          <li><a href="creative.html">KTGRZ CREATIVE</a></li>
+          <li><a href="ezpz.html">EZPZ</a></li>
+          <li><a href="sewooda.html">세우다컴퍼니</a></li>
+          <li><a href="takent.html">TAK ENT</a></li>
+        </ul>
+      </li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
   </div>
+  <nav class="mnav" id="mnav" aria-label="모바일 메뉴">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="index.html#biz">Business</a>
+    <div class="sub" id="biz-sub">
+      <a href="sports.html">KTGRZ SPORTS</a>
+      <a href="creative.html">KTGRZ CREATIVE</a>
+      <a href="ezpz.html">EZPZ</a>
+      <a href="sewooda.html">세우다컴퍼니</a>
+      <a href="takent.html">TAK ENT</a>
+    </div>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+    <p class="tel">TEL <a href="tel:+8225679974">02 567 9974</a></p>
+  </nav>
 </header>
 <!-- ===== /HEADER ===== -->
-<main id="main" class="frame">
+<main id="main">
 
-<section class="page-hero">
-  <div class="inner">
-    <p class="crumb">CONTACT</p>
-    <h1>KTGRZ는 다양한 파트너사와 함께<br>건강한 기업을 만들어갑니다</h1>
-    <p class="desc">스폰서십, 브랜드 콜라보레이션, 프로야구 선수 퍼블리시티권 활용, 해외 유통, 콘텐츠 제작, 태권스튜디오 가맹까지 — 협업의 형태에 관계없이 편하게 연락 주세요. 담당 계열사가 직접 회신드립니다.</p>
+<section class="phero">
+  <div class="wrap">
+    <p class="label"><svg class="mark" aria-hidden="true"><use href="#mark"/></svg><span>Contact</span></p>
+    <h1 class="disp">Contact</h1>
+    <p class="intro">KTGRZ는 다양한 파트너사와 함께 건강한 기업을 만들어갑니다. 협업 형태에 관계없이 연락 주세요. 담당 계열사가 직접 회신드립니다.</p>
   </div>
 </section>
 
-<section class="row">
-  <div class="sec-head"><div class="num">1</div><div class="en-t">Contact Us</div><div class="kr-t">문의하기</div></div>
-  <div class="split">
-    <div class="txt light">
-      <dl class="kv">
-        <dt>E-mail</dt><dd><a href="mailto:ktgrzholdings@ktgrz.com">ktgrzholdings@ktgrz.com</a></dd>
-        <dt>Phone</dt><dd><a href="tel:+8225679974">+82 2 567 9974</a></dd>
-        <dt>Address</dt><dd>서울특별시 강남구 역삼로25길 32, KTGRZ<br><span class="small">(역삼동 616-6 · 1층 KTGRZ COFFEE &amp; ROASTERS)</span></dd>
-        <dt>Sports</dt><dd><a href="mailto:ktgrzsports@ktgrz.com">ktgrzsports@ktgrz.com</a> · <a href="https://ktgrzsports.com" target="_blank" rel="noopener">ktgrzsports.com</a></dd>
-        <dt>Web</dt><dd>www.ktgrz.com</dd>
+<section class="sec">
+  <div class="wrap two top">
+    <div>
+      <p class="tel disp" style="font-size:clamp(44px,6vw,80px);line-height:1"><a href="tel:+8225679974">02 567 9974</a></p>
+      <p class="muted mt-1">평일 업무시간 · KTGRZ HOLDINGS 대표번호</p>
+      <dl class="kv mt-4">
+        <dt>Sports</dt><dd>스폰서십, 선수 퍼블리시티권·IP 활용, 태권스튜디오 가맹 및 클래스, TAKE ON</dd>
+        <dt>Creative</dt><dd>행사·이벤트·전시 주관, 인플루언서·PR·광고, 브랜딩과 디자인</dd>
+        <dt>EZPZ</dt><dd>온라인 쇼핑몰 창업 플랫폼 구독 및 제휴</dd>
+        <dt>Sewooda</dt><dd>해외 인허가, 유통·수출 컨설팅, 라이브 커머스</dd>
+        <dt>Tak Ent</dt><dd>콘텐츠 제작, 출연·광고, 매니지먼트</dd>
       </dl>
-      <p class="mt-32"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EA%B0%95%EB%82%A8%EA%B5%AC+%EC%97%AD%EC%82%BC%EB%A1%9C25%EA%B8%B8+32" target="_blank" rel="noopener">지도에서 보기</a></p>
     </div>
-    <div class="txt" style="border-right:0;border-left:1px solid var(--line)">
-      <h2 class="h-md">문의 남기기</h2>
-      <p class="small mt-8">보내기를 누르면 사용 중인 메일 앱에 내용이 채워진 새 메일이 열립니다.</p>
-      <form id="contact-form" class="form mt-24">
+    <div>
+      <p class="h3">문의 남기기</p>
+      <p class="muted mt-1" style="font-size:14px">접수된 내용은 문의 유형에 따라 담당 계열사로 전달됩니다.</p>
+      <form id="contact-form" class="form mt-3" data-endpoint="" method="post">
         <div><label for="f-name">이름 *</label><input id="f-name" name="name" required autocomplete="name"></div>
         <div><label for="f-company">회사 / 소속</label><input id="f-company" name="company" autocomplete="organization"></div>
         <div><label for="f-email">이메일 *</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
@@ -78,55 +96,35 @@
             <option>기타</option>
           </select></div>
         <div class="full"><label for="f-msg">문의 내용 *</label><textarea id="f-msg" name="message" required></textarea></div>
-        <div class="full"><button class="btn" type="submit">메일로 보내기</button> <p id="form-done" class="note mt-16" hidden>메일 앱이 열리지 않으면 ktgrzholdings@ktgrz.com 으로 직접 보내주세요.</p></div>
+        <div class="full"><button class="btn kr" type="submit">문의 보내기</button><p id="form-msg" class="msg" hidden></p></div>
       </form>
     </div>
   </div>
 </section>
 
-<section class="row dark">
-  <div class="contact-grid">
-    <div class="info">
-      <h2 class="h-lg">KTGRZ 강남 사옥</h2>
-      <p class="sub">브랜드, 콘텐츠, 비즈니스가 연결되는 공간. 1층 KTGRZ COFFEE &amp; ROASTERS에서 파트너를 맞이합니다. 방문 전 미리 연락 주시면 담당자가 안내해 드립니다.</p>
+<section class="sec black">
+  <div class="wrap two">
+    <div>
+      <p class="label"><svg class="mark" aria-hidden="true"><use href="#mark"/></svg><span>Space</span></p>
+      <h2 class="h2">KTGRZ 강남 사옥</h2>
+      <p class="intro">브랜드, 콘텐츠, 비즈니스가 연결되는 공간. 1층 KTGRZ COFFEE &amp; ROASTERS에서 파트너를 맞이합니다. 방문 전 전화로 미리 연락 주시면 담당자가 안내해 드립니다.</p>
     </div>
-    <div class="visual"><img src="assets/img/coffee.webp" alt=""><div class="over"><img class="wm" src="assets/logo/ktgrz_white.png" alt="KTGRZ"></div></div>
+    <div class="img"><img src="assets/img/coffee.webp" alt="KTGRZ 사옥 야경"></div>
   </div>
 </section>
 </main>
 <!-- ===== FOOTER (모든 페이지 동일) ===== -->
-<footer class="site-footer">
-  <div class="inner">
-    <div class="top">
-      <div>
-        <img src="assets/logo/ktgrz_white.png" alt="KTGRZ">
-        <p class="tagline">AWAKEN YOUR LIFE ENERGY</p>
-        <p class="small mt-16">태권도 정신을 기반으로 스포츠와 엔터테인먼트, 브랜드를 잇는<br>스포테인먼트 그룹 KTGRZ</p>
-      </div>
-      <div class="col">
-        <h4>GROUP</h4>
-        <ul>
-          <li><a href="about.html">KTGRZ HOLDINGS</a></li>
-          <li><a href="sports.html">KTGRZ SPORTS</a></li>
-          <li><a href="creative.html">KTGRZ CREATIVE</a></li>
-          <li><a href="ezpz.html">EZPZ</a></li>
-          <li><a href="sewooda.html">세우다컴퍼니</a></li>
-          <li><a href="takent.html">TAK ENT</a></li>
-        </ul>
-      </div>
-      <div class="col">
-        <h4>CONTACT</h4>
-        <ul>
-          <li>서울특별시 강남구 역삼로25길 32, KTGRZ</li>
-          <li><a href="tel:+8225679974">+82 2 567 9974</a></li>
-          <li><a href="mailto:ktgrzholdings@ktgrz.com">ktgrzholdings@ktgrz.com</a></li>
-          <li><a href="https://ktgrzsports.com" target="_blank" rel="noopener">KTGRZ SPORTS 공식 사이트</a></li>
-          <li><a href="https://www.youtube.com/@KTGRZ" target="_blank" rel="noopener">YouTube @KTGRZ</a></li>
-        </ul>
-      </div>
+<footer class="ftr">
+  <div class="wrap g">
+    <div>
+      <a class="logo" href="index.html"><img src="assets/logo/ktgrz_black.png" alt="KTGRZ"><span class="h">HOLDINGS</span></a>
+      <ul>
+        <li>(주)케이티지알지홀딩스</li><li>대표 이동철</li><li>사업자등록번호 598-81-03269</li><li>TEL 02 567 9974</li>
+      </ul>
+      <p class="copy">ⓒ <span id="year">2026</span> KTGRZ HOLDINGS Inc. All Rights Reserved.</p>
     </div>
-    <div class="bottom">
-      <span>(주)케이티지알지홀딩스</span><span>대표 이동철</span><span>사업자등록번호 598-81-03269</span><span>ⓒ <span id="year">2026</span> KTGRZ HOLDINGS Inc. All Rights Reserved.</span>
+    <div class="links">
+      <a href="about.html">About</a><a href="sports.html">Sports</a><a href="creative.html">Creative</a><a href="ezpz.html">EZPZ</a><a href="sewooda.html">Sewooda</a><a href="takent.html">Tak Ent</a><a href="news.html">News</a><a href="contact.html">Contact</a>
     </div>
   </div>
 </footer>
